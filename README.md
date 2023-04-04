@@ -1,8 +1,27 @@
 Employee Network Analysis
 =========================
 
-This project provides a set of tools to analyze the network of relationships between employees in a company. It is built using Python and several libraries for data analysis and visualization, including NetworkX, Pandas, and Matplotlib.
+This project was created for DataCamp competition on network analysis. The aim of this study is to create an employee network using message data and use this network to gain insight on relationships among employess and departments. Below are a few important points.
 
+Data
+------------
+
+Data is provided in 2 separate files: "employees.csv" and "messages.csv"
+
+* Messages has information on the sender, receiver, time and message length
+* Employees has information on each employee including id, department, location and age. 
+
+Analysis
+------------
+
+The project includes several features to analyze the employee network:
+
+*   **Network visualization**: A non directional weighted graph  is produced using the NetworkX library. The graph nodes contain information on different aspects of the network, such as the departments or ages of the employees.
+
+*   **Data Analysis**: Relationships between messages and age, department and date are explored using graph data.  
+    
+*   **Centrality metrics**: Several centrality metrics are calculated including degree centrality, betweenness centrality. These metrics are to identify the most important employees in the network.
+    
 Installation
 ------------
 
@@ -23,18 +42,7 @@ Copy code
 
 `python employee_network_analysis.py`
 
-This will load the data, analyze the network, and produce several graphs and metrics. You can customize the behavior of the script by modifying the parameters in the `config.json` file.
-
-Features
---------
-
-The project includes several features to analyze the employee network:
-
-*   **Network visualization**: The script can produce a graph of the network using the NetworkX library. The graph can be customized to highlight different aspects of the network, such as the departments or the job titles of the employees.
-    
-*   **Centrality metrics**: The script calculates several centrality metrics for each employee, including degree centrality, betweenness centrality, and eigenvector centrality. These metrics can be used to identify the most important employees in the network.
-    
-*   **Community detection**: The script can perform community detection using the Louvain algorithm. This algorithm groups the employees into clusters based on their network connections. The clusters can be visualized and analyzed to identify patterns and relationships between employees.
+This will load the data, analyze the network, and produce several graphs and metrics. 
     
 
 License

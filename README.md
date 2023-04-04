@@ -3,6 +3,8 @@ Employee Network Analysis
 
 This project was created for DataCamp competition on network analysis. The aim of this study is to create an employee network using message data and use this network to gain insight on relationships among employess and departments. 
 
+It is built using Python and several libraries for data analysis and visualization, including NetworkX, Pandas, and Matplotlib.
+
 Data
 ------------
 
